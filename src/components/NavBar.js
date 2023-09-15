@@ -1,31 +1,21 @@
-import {NavLink} from 'react-router-dom'
+import {NavLink,useHistory} from 'react-router-dom'
 import {useState} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function NavBar() {
 
     const [isOpen,setIsOpen] = useState(false)
-
+    const history = useHistory()
 
     function toggleClass(){
       setIsOpen(!isOpen)
     }
 
     return <header>
-
-<div className="socials">
-            <div className="socialLink">
-                <a href="http://www.linkedin.com/in/brian-rosen-eit/">
-                  <FontAwesomeIcon icon="fa-brands fa-linkedin" />
-                </a>
+          
+          <div className="nameContainer">
+              <h2 className="name" onClick={()=>{history.push('/')}}>BRIAN ROSEN</h2>
             </div>
-            <div className="socialLink">
-                <a href="http://github.com/bwrosen20">
-                  <FontAwesomeIcon icon="fa-brands fa-github" />
-                </a>
-            </div>
-            
-        </div>
       <div className="navBar">
 
      
@@ -48,21 +38,17 @@ function NavBar() {
               Resume
             </NavLink>
           </li>
-          <li>
-            <NavLink
-            className="navOption"
-            to="/about"
-            exact>
-              About
-            </NavLink>
-          </li>
-         <li>
-            <NavLink
-            className="navOption"
-            to="/"
-            exact>
-              Home
-            </NavLink>
+          <li className="socials">
+          <div className="socialLink">
+                <a href="http://www.linkedin.com/in/brian-rosen-eit/">
+                  <FontAwesomeIcon icon="fa-brands fa-linkedin" />
+                </a>
+            </div>
+            <div className="socialLink">
+                <a href="http://github.com/bwrosen20">
+                  <FontAwesomeIcon icon="fa-brands fa-github" />
+                </a>
+            </div>
           </li>
         </ul>
       </div>
@@ -87,22 +73,19 @@ function NavBar() {
               Resume
             </NavLink>
           </li>
-          <li>
-            <NavLink
-            className="navOption"
-            to="about"
-            exact>
-              About
-            </NavLink>
+          <li className="socials">
+          <div className="socialLink">
+                <a href="http://www.linkedin.com/in/brian-rosen-eit/">
+                  <FontAwesomeIcon icon="fa-brands fa-linkedin" />
+                </a>
+            </div>
+            <div className="socialLink">
+                <a href="http://github.com/bwrosen20">
+                  <FontAwesomeIcon icon="fa-brands fa-github" />
+                </a>
+            </div>
           </li>
-          <li>
-            <NavLink
-            className="navOption"
-            to="/"
-            exact>
-              Home
-            </NavLink>
-          </li>
+
       </div>
       </header>
   }

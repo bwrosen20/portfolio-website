@@ -30,8 +30,21 @@ function Resume() {
                 "Completed Design of over 50 multimillion square foot factories and warehouses with complex HVAC requirements"]
   }]
 
+  const skills=["Javascript","React","CSS","Ruby","Ruby on Rails","SQL","Github"]
 
-
+  const education=[{
+    "id":1,
+    "school":"University at Buffalo",
+    "degree":"Bachelors of Science in Mechanical Engineering",
+    "graduation":"05/2019",
+    "location":"Buffalo,NY"
+  },{
+    "id":2,
+    "school":"Flatiron School",
+    "degree":"Full Stack Web Development Program",
+    "graduation":"09/2023",
+    "location":"Remote"
+  }]
   return (
   
     <div className="resumeContainer">
@@ -57,23 +70,59 @@ function Resume() {
             </p>
         </div>
       </div>
-      <div className="employmentContainer">
-        <h1>Employment History</h1>
-          {jobs.map((job)=>(
-            <div className="jobContainer" key={job.id}>
-                  <div >
-                    <h4 className="jobTitle">{job.title} at {job.company}</h4>
-                    <h5>{job.location}</h5>
+      <div className="bottomContainer">
+        <div className="employmentContainer">
+          <h1 style={{textDecoration:"underline"}}>Employment History</h1>
+            {jobs.map((job)=>(
+              <div className="jobContainer" key={job.id}>
+                    <div >
+                      <h4 className="jobTitle">{job.title} at {job.company}</h4>
+                      <h5>{job.location}</h5>
+                    </div>
+                    <h4 className="jobTimeframe">{job.timeframe}</h4>
+                    <ul>
+                      {job.bullets.map((bullet)=>(
+                        <li key={bullet}>{bullet}</li>
+                      ))}
+                    </ul>
+                </div>
+            ))}
+        </div>
+        <div >
+          <div className="skillsContainer">
+              <h2>Technologies:</h2>
+              <ul className="skills">
+              {skills.map((skill)=>(
+                <li key={skill}>{skill}</li>
+              )
+              )}
+              </ul>
+        </div>
+        <div className="schoolContainer">
+          <h2>Education:</h2>
+                {education.map((school)=>(
+                  <div className="school" key={school.id}>
+                    <div className="leftSide">
+                      <h4>{school.school}</h4>
+                      <p>{school.degree}</p>
+                    </div>
+                    <div className="rightSide">
+                      <br/>
+                      <p>{school.location}</p>
+                      <p>{school.graduation}</p>
+                    </div>
                   </div>
-                  <h4 className="jobTimeframe">{job.timeframe}</h4>
-                  <ul>
-                    {job.bullets.map((bullet)=>(
-                      <li key={bullet}>{bullet}</li>
-                    ))}
-                  </ul>
-              </div>
-          ))}
-      </div>
+                ))}
+        </div>
+        <div className="about">
+          <h2>A bit about me:</h2>
+          <p>I love sports, writing and coding. I have a dream of building a little house in a van and taking my girlfriend on 
+            a yearlong trip across the country where I can make a living on the road doing something I actually enjoy. The further
+            I get in this journey, the closer I feel to that dream.
+          </p>
+        </div>
+        </div>
+        </div>
     </div>
   )
 }

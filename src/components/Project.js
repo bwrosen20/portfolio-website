@@ -18,8 +18,8 @@ function Project({project}) {
     : <img src={require("../chore-tracker.png")} alt={project.id} className="projectImg"/>} */}
     </div>
     <div>
-      <a className="demoButton">Demo</a>
-      <a className="githubButton">
+      <a href={project.demo} className="demoButton">Demo</a>
+      <a href={project.github} className="githubButton">
         <FontAwesomeIcon icon="fa-brands fa-github" />
       </a>
     
