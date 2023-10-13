@@ -1,6 +1,8 @@
 import React from 'react'
 
 function Home() {
+
+
   return <div className="info">
         <div className="headers">
             <h1>HEY, I'M BRIAN.</h1>

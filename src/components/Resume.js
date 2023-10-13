@@ -11,11 +11,11 @@ function Resume() {
     "bullets":["Initiated takeoff calls with clients recommending effective and energy efficient design practices",
                 "Discussed complex engineering topic in layman's terms with less knowledgeable clients",
                 "Kept constant contact with architects, owners and contractors to ensure seamless design coordination",
-                "Designed HVAC, FP and plumbing systems for residential and small commerical buildings in NYC",
+                "Designed over 150 HVAC, FP and plumbing systems for residential and small commerical buildings in NYC",
                 "Worked directly under PE Matthew Bendix learning more design strategies daily",
                 "Completed design and oversaw construction of two large scale 100 unit apartment buildings",
                 "Traveled to different building/construction sites in NYC to survey existing conditions and inspect installations",
-                "Designed and aided on over 150 projects in a 2 year span"]
+                ]
   },
   {
     "id":2,
@@ -30,7 +30,7 @@ function Resume() {
                 "Completed Design of over 50 multimillion square foot factories and warehouses with complex HVAC requirements"]
   }]
 
-  const skills=["Javascript","React","CSS","Ruby","Ruby on Rails","SQL","Github"]
+  const skills=["Javascript","React","CSS","Ruby","Ruby on Rails","Python","Flask","SQL","Github"]
 
   const education=[{
     "id":1,

@@ -12,22 +12,22 @@ function ProjectContainer() {
     "demo":"https://youtu.be/42ORaeh52uk"
   },{
     "id":2,
-    "name":"Brian's Book Club",
+    "name":"Mustache Books",
     "image":"../Book-club.png",
-    "description":"Brian's Book Club can track 1: books that a club have read, 2: reviews left by each user, 3: nominations and votes for the next book",
+    "description":"Mustache Books can track 1: books that a club have read, 2: reviews left by each user, 3: nominations and votes for the next book. Head to mustachebooks.com to learn more!",
     "github":"https://github.com/bwrosen20/book_club",
-    "demo":"https://youtu.be/B3bWjUCrFk0"
+    "demo":"https://youtu.be/kAQW2-m6BYk"
   },{
     "id":3,
     "name":"Chore Tracker",
     "image":"../chore-tracker.png",
     "description":"Chore Tracker allows admins (parents/guardians) to assign chores to their family. Users will use points earned from completing chores to earn prizes",
     "github":"https://github.com/bwrosen20/chore-tracker",
-    "demo":"https://youtu.be/QbefTQbJCgc"
+    "demo":"https://youtu.be/QbeMustachefTQbJCgc"
   }]
 
   return (
-    <div>
+    <div style={{marginTop:"2.5em"}}>
       <h1 className="heading">Projects</h1>
       <p className="projectParagraph">I selected these projects to show my ability to quickly learn and apply new skills.
         I completed all three projects over a period of three months, and each displays a more advanced understanding of features and styles. 
