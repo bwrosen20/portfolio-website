@@ -5,7 +5,7 @@ function Project({project}) {
 
   
   const [background,setBackground]=useState(false)
-  const className=project.id===1?"jeopardyContainer" : project.id===2 ? "bookContainer" : "choreContainer"
+  const className=project.id===1?"jeopardyContainer" : project.id===2 ? "bookContainer" : project.id===3 ? "choreContainer" : "modelContainer"
 
   return (<div onMouseEnter={()=>setBackground(true)} onMouseLeave={()=>setBackground(false)} className={background ? className+"Empty" : className}>
     <div className="aboveTheButtons">

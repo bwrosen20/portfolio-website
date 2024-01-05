@@ -265,6 +265,35 @@ h3{
 
     }
 
+.modelContainer{
+  position:relative;
+  background-image:url("./basketball_model.png");
+  background-position:center;
+  background-color:rgba(21, 21, 23, 0.874);
+  background-blend-mode:darken;
+  background-size:cover;
+  width:max(40vw,350px);
+  height:max(17vw,180px);
+  border-radius:2em;
+  transition:.4s;
+}
+
+.modelContainerEmpty{
+  position:relative;
+  background-image:url("./basketball_model.png");
+  background-position:center;
+  background-size:cover;
+  width:max(40vw,350px);
+  height:max(17vw,180px);
+  border-radius:2em;
+  transition:.4s;
+}
+
+    .modelContainerEmpty:hover{
+      transform:scale(1.1);
+
+    }
+
 
 .noInfo{
   transition:.4s;
